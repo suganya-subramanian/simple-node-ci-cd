@@ -21,11 +21,11 @@ jobs:
 
       - name: Build the Docker image
         run: |
-          docker build -t your-dockerhub-username/simple-node-app .
+          docker build -t your-dockerhub-username/simple-node-ci-cd .
 
       - name: Push the Docker image
         run: |
-          docker push your-dockerhub-username/simple-node-app
+          docker push your-dockerhub-username/simple-node-ci-cd
 
       - name: Deploy Application (Optional)
         run: |
